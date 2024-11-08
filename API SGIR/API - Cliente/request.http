@@ -1,0 +1,36 @@
+### Crear un cliente
+POST http://localhost:9000/api/clientes
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "correo": "juan.perez@example.com",
+    "usuario": "juanperez",
+    "contraseña": "contraseñaSegura123",
+    "token": "tokenEjemplo123"
+}
+
+### Obtener todos los clientes
+GET http://localhost:9000/api/clientes
+
+### Consultar un cliente por ID
+GET http://localhost:9000/api/clientes/{id}  # Reemplaza {id} con el ID real del cliente
+
+### Actualizar un cliente por ID
+PUT http://localhost:9000/api/clientes/{id}  # Reemplaza {id} con el ID real del cliente
+Content-Type: application/json
+
+{
+    "nombre": "Juan Actualizado",
+    "apellido": "Pérez Actualizado",
+    "correo": "juan_actualizado@example.com",
+    "usuario": "juanperezactualizado",
+    "contraseña": "nuevaContraseñaSegura123",
+    "token": "nuevoTokenEjemplo123"
+}
+
+### Borrar un cliente por ID
+DELETE http://localhost:9000/api/clientes/{id}  # Reemplaza {id} con el ID real del cliente
+
+
