@@ -1,0 +1,39 @@
+###
+
+POST http://localhost:5000/api/excursion HTTP/1.1
+Content-Type: application/json
+
+{   
+    "categoria": "excursion 2",
+    "destino": "Cabo de la Vela",
+    "precio": 1600000,
+    "duracion": "9 dias",
+    "transporte": "Bus",
+    "comida": "Comida tipica",
+    "actividad": "Caminata"
+}
+
+###
+
+GET http://localhost:5000/api/excursion HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/excursion/ HTTP/1.1
+
+###
+PUT http://localhost:5000/api/excursion/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoria": "excursion 3",
+    "destino": "Guajira",
+    "precio": "2500000",
+    "duracion": "7 dias",
+    "transporte": "Bus",
+    "comida": "Comida tipica",
+    "actividad": "Caminata"
+}
+
+###
+DELETE http://localhost:6000/api/excursiones/ HTTP/1.1
