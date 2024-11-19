@@ -1,0 +1,32 @@
+###
+POST http://localhost:9002/api/admin HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreCompleto": "Leon Guillermo",
+    "correo": "correo@ejemplo.com",
+    "nit": "6548945",
+    "contraseña": "ADMIN1234"
+}
+
+###
+GET http://localhost:9002/api/admin HTTP/1.1
+
+### 
+GET http://localhost:9002/api/admin/6735302823ee36de136d9c31 HTTP/1.1
+
+###
+PUT http://localhost:9002/api/admin/672d7f11e824308f6d4904ca HTTP/1.1
+Content-Type: application/json
+
+{    
+    "nombre": "Katerin",
+    "correo": "kate01@ejemplo.com",
+    "nit": "6643",
+    "contraseña": "kt345",
+    
+    
+}
+
+###
+DELETE http://localhost:9002/api/admin/6723256cd3ec2f85890b0357 HTTP/1.1
